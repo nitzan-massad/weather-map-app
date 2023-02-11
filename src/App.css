@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: Arial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.favorites-container {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    width: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.map-container {
+    position: absolute;
+    bottom: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 20%;
+    width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leaflet-container {
+    width: 50vw;
+    height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.logoDiv {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgLogo {
+    height: 10.5%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.removeButton {
+    padding: 5px 11px;
+    background-color: #3498DB;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 2%;
+}
+
+.removeButton:hover {
+    background-color: #2980B9;
+}
+
+.removeButton:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.favButton {
+    padding: 5px 11px;
+    background-color: green;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 15%;
+    display: flex;
+    border-color: #333333;
+    border-width: medium;
+}
+
+.favButton:hover {
+    background-color: darkgreen;
+}
+
+.favButton:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ilStyle {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+
+}
+
+select {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+
+}
+
+select:focus {
+    outline: none;
+    border-color: #639fff;
 }
