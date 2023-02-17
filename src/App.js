@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         if (!selectedCity) return;
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}`)
             .then(response => response.json())
             .then(data => {
                 setTemperature(data.main.temp);
