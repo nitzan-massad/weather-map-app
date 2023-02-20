@@ -62,13 +62,6 @@ function App() {
 
     return (
         <div style={{backgroundColor: temperatureColor}}>
-            < div className="logoDiv">
-                <img
-                    src="cynetLogo.png"
-                    alt="Logo"
-                    style={{height: "50pt", marginLeft: "3%",}}
-                />
-            </div>
             <div className="App">
                 <h1>Weather App</h1>
                 <div>
